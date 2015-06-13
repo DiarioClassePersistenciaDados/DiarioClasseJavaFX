@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="560.0" minWidth="900.0" prefHeight="560.0" prefWidth="900.0" style="-fx-background-color: #F0F0F0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrequenciaController">
+    <children>
+        <AnchorPane layoutX="5.0" layoutY="10.0" prefHeight="540.0" prefWidth="880.0" style="-fx-border-width: 1; -fx-border-color: #000000; -fx-border-style: solid; -fx-background-color: #5793FF;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <AnchorPane layoutX="15.0" layoutY="12.0" prefHeight="515.0" prefWidth="852.0" style="-fx-background-color: #F0F0F0; -fx-border-color: #000000;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Label fx:id="txtTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="14.0" prefHeight="16.0" prefWidth="830.0" text="Cadastro de Frequencias" textAlignment="CENTER" textFill="#ff3200" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboPessoa" layoutX="109.0" layoutY="63.0" prefHeight="25.0" prefWidth="723.0" />
+                  <Label fx:id="txtTitulo1" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="43.0" layoutY="67.0" prefHeight="16.0" prefWidth="62.0" text="Aluno:" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtTitulo11" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="43.0" layoutY="104.0" prefHeight="16.0" prefWidth="62.0" text="Turma:" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtTitulo1113" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="43.0" layoutY="141.0" prefHeight="16.0" prefWidth="62.0" text="Nº Aula:" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSalvar" layoutX="35.0" layoutY="219.0" mnemonicParsing="false" onAction="#salvar" prefHeight="127.0" prefWidth="797.0" text="Salvar Novos Dados" />
+                  <ComboBox fx:id="comboTurma" layoutX="109.0" layoutY="100.0" prefHeight="25.0" prefWidth="723.0" />
+                  <ComboBox fx:id="comboPresenca" layoutX="109.0" layoutY="171.0" prefHeight="25.0" prefWidth="723.0" />
+                  <Label fx:id="txtTitulo111" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="17.0" layoutY="175.0" prefHeight="16.0" prefWidth="88.0" text="Presença:" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fieldNAula" layoutX="109.0" layoutY="137.0" prefHeight="25.0" prefWidth="723.0" />
+               </children>
+            </AnchorPane>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

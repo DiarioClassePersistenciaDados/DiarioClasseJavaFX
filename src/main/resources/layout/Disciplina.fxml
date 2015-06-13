@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="560.0" minWidth="900.0" prefHeight="560.0" prefWidth="900.0" style="-fx-background-color: #F0F0F0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DisciplinaController">
+    <children>
+        <AnchorPane layoutX="5.0" layoutY="10.0" prefHeight="540.0" prefWidth="880.0" style="-fx-border-width: 1; -fx-border-color: #000000; -fx-border-style: solid; -fx-background-color: #5793FF;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <AnchorPane layoutX="15.0" layoutY="12.0" prefHeight="515.0" prefWidth="852.0" style="-fx-background-color: #F0F0F0; -fx-border-color: #000000;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Label fx:id="txtTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="14.0" prefHeight="16.0" prefWidth="830.0" text="Cadastro de Disciplinas" textAlignment="CENTER" textFill="#ff3200" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtTitulo11" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="14.0" layoutY="51.0" prefHeight="16.0" prefWidth="53.0" text="Nome:" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fieldNome" layoutX="74.0" layoutY="47.0" prefHeight="25.0" prefWidth="758.0" />
+                  <TableView fx:id="tabelaDados" layoutX="14.0" layoutY="254.0" prefHeight="244.0" prefWidth="824.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                    <columns>
+                       <TableColumn maxWidth="75.0" minWidth="850.0" prefWidth="70.0" resizable="false" sortable="false" text="Disciplina">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="nome" />
+                          </cellValueFactory>
+                       </TableColumn>
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnSalvar" layoutX="14.0" layoutY="86.0" mnemonicParsing="false" onAction="#salvar" prefHeight="77.0" prefWidth="817.0" text="Salvar Novos Dados" />
+                  <Button fx:id="btnExcluir" layoutX="14.0" layoutY="184.0" mnemonicParsing="false" onAction="#excluir" prefHeight="57.0" prefWidth="817.0" text="Excluir Item Selecionado na Tabela" />
+               </children>
+            </AnchorPane>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

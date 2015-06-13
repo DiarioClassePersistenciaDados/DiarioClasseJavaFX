@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="560.0" minWidth="900.0" prefHeight="560.0" prefWidth="900.0" style="-fx-background-color: #F0F0F0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TurmaController">
+    <children>
+        <AnchorPane layoutX="5.0" layoutY="10.0" prefHeight="540.0" prefWidth="880.0" style="-fx-border-width: 1; -fx-border-color: #000000; -fx-border-style: solid; -fx-background-color: #5793FF;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <AnchorPane layoutX="15.0" layoutY="12.0" prefHeight="515.0" prefWidth="852.0" style="-fx-background-color: #F0F0F0; -fx-border-color: #000000;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Label fx:id="txtTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="14.0" prefHeight="16.0" prefWidth="830.0" text="Cadastro de Turmas" textAlignment="CENTER" textFill="#ff3200" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtTitulo11" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="14.0" layoutY="88.0" prefHeight="16.0" prefWidth="157.0" text="Dt Fim (dd/MM/aaaa):" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fieldDataFim" layoutX="172.0" layoutY="84.0" prefHeight="25.0" prefWidth="291.0" />
+                  <Label fx:id="txtTitulo111" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="44.0" layoutY="122.0" prefHeight="16.0" prefWidth="128.0" text="Quantidade Aulas:" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fieldQuantidadeAulas" layoutX="172.0" layoutY="117.0" prefHeight="25.0" prefWidth="291.0" />
+                  <Label fx:id="txtTitulo1112" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="32.0" layoutY="156.0" prefHeight="16.0" prefWidth="139.0" text="Disciplina:" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtTitulo1113" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="32.0" layoutY="188.0" prefHeight="16.0" prefWidth="139.0" text="Professor:" textAlignment="CENTER" textFill="#ff3200">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tabelaDados" layoutX="12.0" layoutY="254.0" prefHeight="279.0" prefWidth="826.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0">
+                    <columns>
+                       <TableColumn maxWidth="75.0" minWidth="375.0" prefWidth="70.0" resizable="false" sortable="false" text="Disciplina">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="disciplinaProfessor" />
+                          </cellValueFactory>
+                       </TableColumn>
+                       <TableColumn maxWidth="75.0" minWidth="150.0" prefWidth="70.0" resizable="false" sortable="false" text="Data Início">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="datainicio" />
+                          </cellValueFactory>
+                       </TableColumn>
+                       <TableColumn maxWidth="75.0" minWidth="150.0" prefWidth="70.0" resizable="false" sortable="false" text="Data Fim">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="datafim" />
+                          </cellValueFactory>
+                       </TableColumn>
+                       <TableColumn maxWidth="75.0" minWidth="150.0" prefWidth="70.0" resizable="false" sortable="false" text="Quantidade de Aulas">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="quantidadeaulas" />
+                          </cellValueFactory>
+                       </TableColumn>
+                       <TableColumn maxWidth="25.0" minWidth="200.0" prefWidth="25.0" resizable="false" sortable="false" text="E-mail">
+                          <cellValueFactory>
+                             <PropertyValueFactory property="email" />
+                          </cellValueFactory>
+                       </TableColumn>
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnSalvar" layoutX="474.0" layoutY="47.0" mnemonicParsing="false" onAction="#salvar" prefHeight="97.0" prefWidth="363.0" text="Salvar Novos Dados" />
+                  <Button fx:id="btnExcluir" layoutX="474.0" layoutY="148.0" mnemonicParsing="false" onAction="#excluir" prefHeight="57.0" prefWidth="363.0" text="Excluir Item Selecionado na Tabela" />
+                  <ComboBox fx:id="comboDisciplina" layoutX="172.0" layoutY="151.0" prefHeight="25.0" prefWidth="291.0" />
+                  <ComboBox fx:id="comboProfessor" layoutX="172.0" layoutY="183.0" prefHeight="25.0" prefWidth="291.0" />
+               </children>
+            </AnchorPane>
+            <TextField fx:id="fieldDataInicio" layoutX="187.0" layoutY="68.0" prefHeight="25.0" prefWidth="291.0" />
+            <Label fx:id="txtTitulo112" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="29.0" layoutY="72.0" prefHeight="16.0" prefWidth="157.0" text="Dt Início (dd/MM/aaaa):" textAlignment="CENTER" textFill="#ff3200">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
